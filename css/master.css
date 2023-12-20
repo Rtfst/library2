@@ -1,0 +1,70 @@
+:root{
+    --pad: 20px;
+--color: #181616c2;
+}
+html{
+    scroll-behavior: smooth;
+}
+*{
+    box-sizing: border-box;
+}
+.links{
+    padding: var(--pad) 0;
+    text-align: center;
+    background-color: var(--color);
+    color: #fff;
+}
+body{
+    overflow-x: hidden;
+    font-family: 'Cairo', sans-serif;
+font-family: 'Roboto', sans-serif;
+background-color:#053B50 ;
+}
+.links div{
+    cursor: pointer;
+}
+.head{
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("back.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.head::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #18161680;
+}
+.head .cont{
+    color: #dfd7d7;
+    text-align: center;
+    line-height: 1.7;
+    position: absolute;
+    z-index: 1;
+}
+.head .cont button{
+    color:#dfd7d7;
+    background-color: #222;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    padding: 10px;
+    text-decoration: none;
+}
+.book{
+    padding: calc( var(--pad) + 10px) 0;
+    text-align: center;
+}
+.col-md-4{
+line-height: 1.7;
+text-align: center;
+padding: var(--pad) 0;
+}
+img{
+    cursor: pointer;
+}
